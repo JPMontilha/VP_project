@@ -1,0 +1,19 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"obj_cartas","order":2,"path":"objects/obj_cartas/obj_cartas.yy",},
+    {"name":"obj_espadas","order":6,"path":"objects/obj_espadas/obj_espadas.yy",},
+    {"name":"obj_inimigo","order":1,"path":"objects/obj_inimigo/obj_inimigo.yy",},
+    {"name":"obj_raio","order":9,"path":"objects/obj_raio/obj_raio.yy",},
+    {"name":"obj_tiro","order":3,"path":"objects/obj_tiro/obj_tiro.yy",},
+    {"name":"obj_ui","order":10,"path":"objects/obj_ui/obj_ui.yy",},
+    {"name":"obj_upgrade","order":8,"path":"objects/obj_upgrade/obj_upgrade.yy",},
+    {"name":"obj_xp","order":5,"path":"objects/obj_xp/obj_xp.yy",},
+    {"name":"spr_background","order":5,"path":"sprites/spr_background/spr_background.yy",},
+    {"name":"spr_cartas","order":2,"path":"sprites/spr_cartas/spr_cartas.yy",},
+    {"name":"spr_enemy01","order":1,"path":"sprites/spr_enemy01/spr_enemy01.yy",},
+    {"name":"spr_espadas","order":4,"path":"sprites/spr_espadas/spr_espadas.yy",},
+    {"name":"spr_xp","order":3,"path":"sprites/spr_xp/spr_xp.yy",},
+  ],
+}
