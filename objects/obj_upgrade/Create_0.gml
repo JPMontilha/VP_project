@@ -51,10 +51,21 @@ function aplicar_upgrade(op) {
 	            break;
 			
 			case "guitarra":
-				arma5.level += 1;
-				arma5.alvos += 1;
 				var guitarra = instance_find(obj_guitarra, 0);
-				if (guitarra != noone) guitarra.alvos = arma5.alvos;
+				if (guitarra == noone) {
+					if (arma5.level == 0) array_push(armas, arma5);
+					arma5.level = max(arma5.level, 1);
+					guitarra = instance_create_layer(x, y, "Instances", obj_guitarra);
+					guitarra.dono = id;
+				} else {
+					arma5.level += 1;
+					arma5.alvos += 1;
+				}
+
+				guitarra.dano = arma5.dano;
+				guitarra.cooldown = arma5.cooldown;
+				guitarra.alcance = arma5.alcance;
+				guitarra.alvos = arma5.alvos;
 				break;
 			
 			case "upgrade_hp":

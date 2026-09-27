@@ -17,8 +17,6 @@ var spread = lerp(360, 5, forca);
 // dano muda com a força
 var dano_final = alvo.arma2.dano * lerp(0.05, 1, forca);
 
-show_debug_message(dano_final)
-
 // transparência
 image_alpha = lerp(0.05, 1, forca);
 

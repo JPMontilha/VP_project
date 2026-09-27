@@ -78,8 +78,8 @@ arma5 = {
 
 lista_armas = [arma1, arma2, arma3, arma5]
 var escolhida = lista_armas[irandom(array_length(lista_armas) - 1)];
-//array_push(armas, escolhida)
-array_push(armas, arma5);
+array_push(armas, escolhida)
+//array_push(armas, arma5);
 
 function atacar(w)
 {
