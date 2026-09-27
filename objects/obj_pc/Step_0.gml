@@ -12,6 +12,10 @@ if (global.estado == "NORMAL") {
 	tempo_vivo ++
 }
 
+if (hp == 0) {
+	room_goto(rm_game_over)
+}
+
 #region Movimentação
 
 if (keyboard_check(ord("W")) || keyboard_check(vk_up)){
