@@ -61,14 +61,25 @@ arma4 = {
 	
 }
 
+arma5 = {
+	nome: "guitarra",
+	cooldown: room_speed,// * 4,
+	timer: 0,
+	level: 0,
+	dano: 5,
+	alvos: 1,
+	alcance: 600
+}
+
 #endregion
 
 #region Passivas
 #endregion
 
-lista_armas = [arma1, arma2, arma3]
+lista_armas = [arma1, arma2, arma3, arma5]
 var escolhida = lista_armas[irandom(array_length(lista_armas) - 1)];
-array_push(armas, escolhida)
+//array_push(armas, escolhida)
+array_push(armas, arma5);
 
 function atacar(w)
 {
@@ -99,6 +110,18 @@ function atacar(w)
 				proj.dano = arma3.dano;
 				proj.vel = arma3.vel;
 			}
+			break
+		
+		case "guitarra":
+			var guitarra = instance_find(obj_guitarra, 0);
+			if (guitarra == noone) {
+				guitarra = instance_create_layer(x, y, "Instances", obj_guitarra);
+				guitarra.dono = id;
+			}
+			guitarra.dano = arma5.dano;
+			guitarra.cooldown = arma5.cooldown;
+			guitarra.alcance = arma5.alcance;
+			guitarra.alvos = arma5.alvos;
 			break
 		
 		case "canhao orbital":

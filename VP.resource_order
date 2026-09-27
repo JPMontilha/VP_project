@@ -4,6 +4,7 @@
     {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_cartas","order":2,"path":"objects/obj_cartas/obj_cartas.yy",},
     {"name":"obj_espadas","order":6,"path":"objects/obj_espadas/obj_espadas.yy",},
+    {"name":"obj_guitarra","order":11,"path":"objects/obj_guitarra/obj_guitarra.yy",},
     {"name":"obj_inimigo","order":1,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"obj_raio","order":9,"path":"objects/obj_raio/obj_raio.yy",},
     {"name":"obj_tiro","order":3,"path":"objects/obj_tiro/obj_tiro.yy",},
@@ -14,6 +15,8 @@
     {"name":"spr_cartas","order":2,"path":"sprites/spr_cartas/spr_cartas.yy",},
     {"name":"spr_enemy01","order":1,"path":"sprites/spr_enemy01/spr_enemy01.yy",},
     {"name":"spr_espadas","order":4,"path":"sprites/spr_espadas/spr_espadas.yy",},
+    {"name":"spr_guitarra","order":6,"path":"sprites/spr_guitarra/spr_guitarra.yy",},
+    {"name":"spr_raio","order":7,"path":"sprites/spr_raio/spr_raio.yy",},
     {"name":"spr_xp","order":3,"path":"sprites/spr_xp/spr_xp.yy",},
   ],
 }

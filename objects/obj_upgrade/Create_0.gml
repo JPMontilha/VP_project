@@ -11,6 +11,7 @@ array_push(opcoes, "espadas");
 array_push(opcoes, "upgrade_hp");
 array_push(opcoes, "luz");
 array_push(opcoes, "canhao orbital");
+array_push(opcoes, "guitarra");
 
 opcoes_mostradas = [];
 
@@ -48,6 +49,13 @@ function aplicar_upgrade(op) {
 					arma3.quantidade += 1
 				}
 	            break;
+			
+			case "guitarra":
+				arma5.level += 1;
+				arma5.alvos += 1;
+				var guitarra = instance_find(obj_guitarra, 0);
+				if (guitarra != noone) guitarra.alvos = arma5.alvos;
+				break;
 			
 			case "upgrade_hp":
 				hp_max += 1
