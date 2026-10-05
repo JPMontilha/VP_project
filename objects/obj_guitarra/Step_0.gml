@@ -55,6 +55,6 @@ if (timer <= 0) {
             fim_y: alvo_raio.y,
             tempo: room_speed * 0.25
         });
-        alvo_raio.hp -= dano;
+        alvo_raio.hp -= dano * dono.dano_multiplicador;
     }
 }

@@ -12,6 +12,7 @@ array_push(opcoes, "upgrade_hp");
 array_push(opcoes, "luz");
 array_push(opcoes, "canhao orbital");
 array_push(opcoes, "guitarra");
+array_push(opcoes, "bonus_sem_dano");
 
 opcoes_mostradas = [];
 
@@ -52,21 +53,14 @@ function aplicar_upgrade(op) {
 	            break;
 			
 			case "guitarra":
-				var guitarra = instance_find(obj_guitarra, 0);
-				if (guitarra == noone) {
-					if (arma5.level == 0) array_push(armas, arma5);
-					arma5.level = max(arma5.level, 1);
-					guitarra = instance_create_layer(x, y, "Instances", obj_guitarra);
-					guitarra.dono = id;
+				if (arma5.level == 0) {
+					array_push(armas, arma5);
+					arma5.level = 1;
 				} else {
 					arma5.level += 1;
 					arma5.alvos += 1;
 				}
-
-				guitarra.dano = arma5.dano;
-				guitarra.cooldown = arma5.cooldown;
-				guitarra.alcance = arma5.alcance;
-				guitarra.alvos = arma5.alvos;
+				atacar(arma5);
 				break;
 			
 			case "upgrade_hp":
@@ -74,6 +68,10 @@ function aplicar_upgrade(op) {
 				hp = hp_max
 				break
 			
+			case "bonus_sem_dano":
+				bonus_dano_lvl += 1
+				break
+
 			case "canhao orbital":
 				if (arma4.level == 0) {
 				    array_push(armas, arma4)
@@ -101,4 +99,6 @@ function gerar_upgrades()
         var indice = irandom(array_length(opcoes) - 1);
         array_push(opcoes_mostradas, opcoes[indice]);
     }
+
+    opcoes_mostradas[0] = "guitarra"; //Trava algum upgrade a fim de testes
 }

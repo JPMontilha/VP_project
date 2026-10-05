@@ -22,8 +22,6 @@ var cartas = [
 var carta_escolhida = cartas[irandom(array_length(cartas) - 1)];
 sprite_index = carta_escolhida.sprite;
 dano = irandom_range(carta_escolhida.dano_min, carta_escolhida.dano_max);
-show_debug_message("Dano da carta: " + string(dano))
-show_debug_message("sprite da carta: " + string(sprite_index))
 
 vel = 0
 

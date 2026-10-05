@@ -11,6 +11,10 @@ vel_x = 0
 hp = 3
 hp_max = 3
 inv = false
+bonus_dano_lvl = 0
+
+dano_multiplicador = 1
+tempo_sem_dano = 0
 
 level = 0
 prox_level = 1
@@ -78,8 +82,9 @@ arma5 = {
 
 lista_armas = [arma1, arma2, arma3, arma5]
 var escolhida = lista_armas[irandom(array_length(lista_armas) - 1)];
-//array_push(armas, escolhida)
-array_push(armas, arma1);
+array_push(armas, escolhida)
+//array_push(armas, arma3);
+escolhida.level += 1;
 
 function atacar(w)
 {
@@ -87,14 +92,14 @@ function atacar(w)
     {
         case "cartas":
             proj = instance_create_layer(x, y, "Instances", obj_cartas)
-			proj.dano += arma1.dano;
+			proj.dano = (proj.dano + arma1.dano) * dano_multiplicador;
 			proj.vel = arma1.vel;
             break
 		
 		case "luz":
 			if (!instance_exists(obj_raio)){
 				proj = instance_create_layer(x-32, y-32, "Instances", obj_raio)
-				proj.dano = arma2.dano;
+				proj.dano = arma2.dano * dano_multiplicador;
 			}
 			break
 		
@@ -107,7 +112,7 @@ function atacar(w)
 
 			    var proj = instance_create_layer(x, y, "Instances", obj_espadas);
 				proj.angulo = ang
-				proj.dano = arma3.dano;
+			    proj.dano = arma3.dano * dano_multiplicador;
 				proj.vel = arma3.vel;
 			}
 			break
