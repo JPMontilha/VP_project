@@ -25,6 +25,7 @@ function aplicar_upgrade(op) {
 				} else{
 		            arma1.level += 1
 					arma1.cooldown = arma1.cooldown/2
+					arma1.dano += 1
 				}
 	            break;
 			

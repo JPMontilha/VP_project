@@ -11,7 +11,7 @@ if (!instance_exists(dono)) {
 x = dono.x + 32;
 y = dono.y - 22;
 
-if (global.estado == "LEVEL_UP") exit;
+if (global.estado == "LEVEL_UP") instance_destroy();
 
 var raios_ativos = [];
 for (var r = 0; r < array_length(raios_visuais); r++) {

@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Cartas","order":10,"path":"folders/Sprites/Cartas.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"btn_retry","order":12,"path":"objects/btn_retry/btn_retry.yy",},
     {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
@@ -14,7 +16,18 @@
     {"name":"obj_xp","order":5,"path":"objects/obj_xp/obj_xp.yy",},
     {"name":"rm_game_over","order":1,"path":"rooms/rm_game_over/rm_game_over.yy",},
     {"name":"spr_background","order":5,"path":"sprites/spr_background/spr_background.yy",},
-    {"name":"spr_cartas","order":2,"path":"sprites/spr_cartas/spr_cartas.yy",},
+    {"name":"spr_cartas_10","order":7,"path":"sprites/spr_cartas_10/spr_cartas_10.yy",},
+    {"name":"spr_cartas_2","order":1,"path":"sprites/spr_cartas_2/spr_cartas_2.yy",},
+    {"name":"spr_cartas_3","order":10,"path":"sprites/spr_cartas_3/spr_cartas_3.yy",},
+    {"name":"spr_cartas_5","order":2,"path":"sprites/spr_cartas_5/spr_cartas_5.yy",},
+    {"name":"spr_cartas_6","order":3,"path":"sprites/spr_cartas_6/spr_cartas_6.yy",},
+    {"name":"spr_cartas_7","order":4,"path":"sprites/spr_cartas_7/spr_cartas_7.yy",},
+    {"name":"spr_cartas_8","order":5,"path":"sprites/spr_cartas_8/spr_cartas_8.yy",},
+    {"name":"spr_cartas_9","order":6,"path":"sprites/spr_cartas_9/spr_cartas_9.yy",},
+    {"name":"spr_cartas_A","order":12,"path":"sprites/spr_cartas_A/spr_cartas_A.yy",},
+    {"name":"spr_cartas_J","order":8,"path":"sprites/spr_cartas_J/spr_cartas_J.yy",},
+    {"name":"spr_cartas_K","order":11,"path":"sprites/spr_cartas_K/spr_cartas_K.yy",},
+    {"name":"spr_cartas_Q","order":9,"path":"sprites/spr_cartas_Q/spr_cartas_Q.yy",},
     {"name":"spr_enemy01","order":1,"path":"sprites/spr_enemy01/spr_enemy01.yy",},
     {"name":"spr_espadas","order":4,"path":"sprites/spr_espadas/spr_espadas.yy",},
     {"name":"spr_game_over","order":8,"path":"sprites/spr_game_over/spr_game_over.yy",},

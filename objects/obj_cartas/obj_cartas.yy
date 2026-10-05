@@ -34,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_cartas",
-    "path":"sprites/spr_cartas/spr_cartas.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

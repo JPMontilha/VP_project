@@ -1,4 +1,4 @@
-/// @description Inserir descrição aqui
+/// @description UI do jogo
 // Você pode escrever seu código neste editor
 
 var pc = instance_find(obj_pc, 0);
@@ -23,6 +23,10 @@ if (instance_exists(pc))
         "HP: " + string(pc.hp) + " / " + string(pc.hp_max)
     );
 	
+	draw_text(20, 40,
+        "Nível: " + string(pc.level)
+    );
+
 	draw_text(20, 60,
         string(minutos) + ":" + seg_txt
     );

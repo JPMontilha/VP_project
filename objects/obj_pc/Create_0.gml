@@ -26,11 +26,11 @@ raio_transicao = 10 * room_speed // 10 segundos
 
 arma1 = {
 	nome: "cartas",
-	cooldown: room_speed / 2,
+	cooldown: room_speed / 0.5,
 	timer: 0,
 	level: 0,
-	dano: 5,
-	vel: 4
+	dano: 0,
+	vel: 7
 }
 
 arma2 = {
@@ -78,16 +78,16 @@ arma5 = {
 
 lista_armas = [arma1, arma2, arma3, arma5]
 var escolhida = lista_armas[irandom(array_length(lista_armas) - 1)];
-array_push(armas, escolhida)
-//array_push(armas, arma5);
+//array_push(armas, escolhida)
+array_push(armas, arma1);
 
 function atacar(w)
 {
     switch(w.nome)
     {
         case "cartas":
-            proj = instance_create_layer(x-32, y-32, "Instances", obj_cartas)
-			proj.dano = arma1.dano;
+            proj = instance_create_layer(x, y, "Instances", obj_cartas)
+			proj.dano += arma1.dano;
 			proj.vel = arma1.vel;
             break
 		
