@@ -13,6 +13,8 @@ array_push(opcoes, "luz");
 array_push(opcoes, "canhao orbital");
 array_push(opcoes, "guitarra");
 array_push(opcoes, "bonus_sem_dano");
+array_push(opcoes, "atração_XP");
+array_push(opcoes, "torreta");
 
 opcoes_mostradas = [];
 
@@ -68,6 +70,10 @@ function aplicar_upgrade(op) {
 				hp = hp_max
 				break
 			
+			case "atração_XP":
+				xp_area += 60
+				break
+			
 			case "bonus_sem_dano":
 				bonus_dano_lvl += 1
 				break
@@ -87,6 +93,16 @@ function aplicar_upgrade(op) {
 				    }
 				}
 				break
+			
+			case "torreta":
+				if (arma6.level == 0){
+					array_push(armas, arma6)
+					arma6.level = 1
+				} else{
+		            arma6.level += 1
+					arma6.cooldown = room_speed * 5 / (level + 2)
+				}
+	            break;
 	    }
 	}
 }
@@ -100,5 +116,5 @@ function gerar_upgrades()
         array_push(opcoes_mostradas, opcoes[indice]);
     }
 
-    //opcoes_mostradas[0] = "guitarra"; //Trava algum upgrade a fim de testes
+    opcoes_mostradas[0] = "torreta"; //Trava algum upgrade a fim de testes
 }

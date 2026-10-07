@@ -11,6 +11,8 @@
     {"name":"obj_inimigo","order":1,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"obj_raio","order":9,"path":"objects/obj_raio/obj_raio.yy",},
     {"name":"obj_tiro","order":3,"path":"objects/obj_tiro/obj_tiro.yy",},
+    {"name":"obj_torreta_tiro","order":14,"path":"objects/obj_torreta_tiro/obj_torreta_tiro.yy",},
+    {"name":"obj_torreta","order":13,"path":"objects/obj_torreta/obj_torreta.yy",},
     {"name":"obj_ui","order":10,"path":"objects/obj_ui/obj_ui.yy",},
     {"name":"obj_upgrade","order":8,"path":"objects/obj_upgrade/obj_upgrade.yy",},
     {"name":"obj_xp","order":5,"path":"objects/obj_xp/obj_xp.yy",},
@@ -34,6 +36,8 @@
     {"name":"spr_guitarra","order":6,"path":"sprites/spr_guitarra/spr_guitarra.yy",},
     {"name":"spr_raio","order":7,"path":"sprites/spr_raio/spr_raio.yy",},
     {"name":"spr_retry","order":9,"path":"sprites/spr_retry/spr_retry.yy",},
+    {"name":"spr_torreta_tiro","order":12,"path":"sprites/spr_torreta_tiro/spr_torreta_tiro.yy",},
+    {"name":"spr_torreta","order":11,"path":"sprites/spr_torreta/spr_torreta.yy",},
     {"name":"spr_xp","order":3,"path":"sprites/spr_xp/spr_xp.yy",},
   ],
 }

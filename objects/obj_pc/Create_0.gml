@@ -75,6 +75,14 @@ arma5 = {
 	alcance: 600
 }
 
+arma6 = {
+	nome: "torreta",
+	cooldown: room_speed * 5 / (level + 2),
+	timer: 0,
+	level: 0,
+	dano: 0,
+}
+
 #endregion
 
 #region Passivas
@@ -82,8 +90,8 @@ arma5 = {
 
 lista_armas = [arma1, arma2, arma3, arma5]
 var escolhida = lista_armas[irandom(array_length(lista_armas) - 1)];
-array_push(armas, escolhida)
-//array_push(armas, arma3);
+//array_push(armas, escolhida)
+array_push(armas, arma6);
 escolhida.level += 1;
 
 function atacar(w)
@@ -135,5 +143,9 @@ function atacar(w)
 			        hp = 0;
 			    }
 			break
+		
+		 case "torreta":
+            instance_create_layer(x, y, "Instances", obj_torreta)
+            break
     }
 }
