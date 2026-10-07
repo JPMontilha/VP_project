@@ -13,4 +13,6 @@ altura = camera_get_view_height(cam)
 
 margem = 100
 
+tempo = 1
+
 alarm[0] = room_speed / 3

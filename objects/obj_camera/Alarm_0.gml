@@ -29,4 +29,5 @@ switch (lado)
 
 
 instance_create_layer(spawn_x, spawn_y, "Instances", obj_inimigo);
-alarm[0] = room_speed
+alarm[0] = room_speed / tempo
+alarm[1] = room_speed
