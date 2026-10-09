@@ -10,4 +10,3 @@ if (global.estado == "LEVEL_UP") {
 if (pego){
 	move_towards_point(obj_pc.x, obj_pc.y, 4);
 }
-

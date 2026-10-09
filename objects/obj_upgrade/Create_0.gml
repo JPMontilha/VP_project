@@ -116,5 +116,5 @@ function gerar_upgrades()
         array_push(opcoes_mostradas, opcoes[indice]);
     }
 
-    opcoes_mostradas[0] = "torreta"; //Trava algum upgrade a fim de testes
+    //opcoes_mostradas[0] = "torreta"; //Trava algum upgrade a fim de testes
 }

@@ -88,10 +88,10 @@ arma6 = {
 #region Passivas
 #endregion
 
-lista_armas = [arma1, arma2, arma3, arma5]
+lista_armas = [arma1, arma2, arma3, arma5, arma6]
 var escolhida = lista_armas[irandom(array_length(lista_armas) - 1)];
-//array_push(armas, escolhida)
-array_push(armas, arma6);
+array_push(armas, escolhida)
+//array_push(armas, arma6);
 escolhida.level += 1;
 
 function atacar(w)
