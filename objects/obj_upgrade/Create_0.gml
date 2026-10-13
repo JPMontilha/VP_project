@@ -84,12 +84,12 @@ function aplicar_upgrade(op) {
 				    arma4.level = 1
 				} else{
 				    arma4.level += 1
-				    arma4.cooldown -= room_speed * 5
+				    arma4.cooldown -= game_get_speed(gamespeed_fps) * 5
 
 				    // limite mínimo (recomendado)
-				    if (arma4.cooldown < room_speed * 5)
+				    if (arma4.cooldown < game_get_speed(gamespeed_fps) * 5)
 				    {
-				        arma4.cooldown = room_speed * 5
+				        arma4.cooldown = game_get_speed(gamespeed_fps) * 5
 				    }
 				}
 				break
@@ -100,7 +100,7 @@ function aplicar_upgrade(op) {
 					arma6.level = 1
 				} else{
 		            arma6.level += 1
-					arma6.cooldown = room_speed * 5 / (level + 2)
+					arma6.cooldown = game_get_speed(gamespeed_fps) * 5 / (level + 2)
 				}
 	            break;
 	    }

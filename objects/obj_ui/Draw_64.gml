@@ -6,7 +6,7 @@ var pc = instance_find(obj_pc, 0);
 if (instance_exists(pc))
 {	
 	// tempo total em segundos
-    var total_segundos = floor(pc.tempo_vivo / room_speed);
+    var total_segundos = floor(pc.tempo_vivo / game_get_speed(gamespeed_fps));
 
     // minutos
     var minutos = total_segundos div 60;

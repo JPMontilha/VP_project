@@ -4,6 +4,6 @@
 vel = 2
 
 var jogador = instance_find(obj_pc, 0);
-var intervalos = floor(jogador.tempo_vivo / (room_speed * 30));
+var intervalos = floor(jogador.tempo_vivo / (game_get_speed(gamespeed_fps) * 30));
 
 hp = 10 + (intervalos * 10);

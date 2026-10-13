@@ -53,7 +53,7 @@ if (timer <= 0) {
             inicio_y: y + 16,
             fim_x: alvo_raio.x,
             fim_y: alvo_raio.y,
-            tempo: room_speed * 0.25
+            tempo: game_get_speed(gamespeed_fps) * 0.25
         });
         alvo_raio.hp -= dano * dono.dano_multiplicador;
     }

@@ -6,5 +6,5 @@ if (!inv){
 	dano_multiplicador = 1
 	tempo_sem_dano = 0
 	inv = true
-	alarm[0] = room_speed * 3
+	alarm[0] = game_get_speed(gamespeed_fps) * 3
 }

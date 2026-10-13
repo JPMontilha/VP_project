@@ -3,4 +3,4 @@
 
 tempo = tempo * 1.1
 
-alarm[1] = room_speed * 10
+alarm[1] = game_get_speed(gamespeed_fps) * 10

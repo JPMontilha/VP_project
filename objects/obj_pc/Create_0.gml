@@ -24,13 +24,13 @@ xp_level = 0
 armas = []
 
 raio_forca = 0 // 0 = fraco (movendo), 1 = forte (parado)
-raio_transicao = 10 * room_speed // 10 segundos
+raio_transicao = 10 * game_get_speed(gamespeed_fps) // 10 segundos
 
 #region Armas
 
 arma1 = {
 	nome: "cartas",
-	cooldown: room_speed / 0.5,
+	cooldown: game_get_speed(gamespeed_fps) / 0.5,
 	timer: 0,
 	level: 0,
 	dano: 0,
@@ -58,7 +58,7 @@ arma3 = {
 
 arma4 = {
 	nome: "canhao orbital",
-	cooldown: room_speed * 30,
+	cooldown: game_get_speed(gamespeed_fps) * 30,
 	timer: 0,
 	level: 0,
 	dano: 9999999999
@@ -67,7 +67,7 @@ arma4 = {
 
 arma5 = {
 	nome: "guitarra",
-	cooldown: room_speed,// * 4,
+	cooldown: game_get_speed(gamespeed_fps),// * 4,
 	timer: 0,
 	level: 0,
 	dano: 5,
@@ -77,7 +77,7 @@ arma5 = {
 
 arma6 = {
 	nome: "torreta",
-	cooldown: room_speed * 5 / (level + 2),
+	cooldown: game_get_speed(gamespeed_fps) * 5 / (level + 2),
 	timer: 0,
 	level: 0,
 	dano: 0,

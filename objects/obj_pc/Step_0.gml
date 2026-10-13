@@ -10,9 +10,9 @@ if (global.estado == "LEVEL_UP") {
 
 if (global.estado == "NORMAL") {
 	tempo_vivo ++
-	tempo_sem_dano = min(tempo_sem_dano + 1, room_speed * 5)
+	tempo_sem_dano = min(tempo_sem_dano + 1, game_get_speed(gamespeed_fps) * 5)
 
-	if (tempo_sem_dano >= room_speed * 5 && bonus_dano_lvl > 0) {
+	if (tempo_sem_dano >= game_get_speed(gamespeed_fps) * 5 && bonus_dano_lvl > 0) {
 		var novo_multiplicador = 1.5 + ((bonus_dano_lvl - 1) * 0.2)
 
 		if (dano_multiplicador != novo_multiplicador) {
