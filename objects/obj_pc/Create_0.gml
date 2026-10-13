@@ -8,6 +8,8 @@ tempo_vivo = 0
 vel_y = 0
 vel_x = 0
 
+vel_up = 0
+
 hp = 3
 hp_max = 3
 inv = false

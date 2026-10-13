@@ -29,11 +29,11 @@ if (hp == 0) {
 
 if (keyboard_check(ord("W")) || keyboard_check(vk_up)){
 	if !(y - 32 <= 0){
-		vel_y = -3
+		vel_y = -3 - vel_up
 	}
 }else if(keyboard_check(ord("S")) || keyboard_check(vk_down)){
 	if !(y + 32 >= 10000){
-		vel_y = 3
+		vel_y = 3 + vel_up
 	}
 }else{
 	vel_y = 0
@@ -41,11 +41,11 @@ if (keyboard_check(ord("W")) || keyboard_check(vk_up)){
 
 if(keyboard_check(ord("A")) || keyboard_check(vk_left)){
 	if !(x - 32 <= 0){
-		vel_x = -3
+		vel_x = -3 - vel_up
 	}
 }else if(keyboard_check(ord("D")) || keyboard_check(vk_right)){
 	if !(x + 32 >= 10000){
-		vel_x = 3
+		vel_x = 3 + vel_up
 	}
 } else{
 	vel_x = 0

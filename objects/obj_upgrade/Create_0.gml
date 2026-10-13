@@ -15,6 +15,7 @@ array_push(opcoes, "guitarra");
 array_push(opcoes, "bonus_sem_dano");
 array_push(opcoes, "atração_XP");
 array_push(opcoes, "torreta");
+array_push(opcoes, "velocidade_de_movimento");
 
 opcoes_mostradas = [];
 
@@ -70,6 +71,10 @@ function aplicar_upgrade(op) {
 				hp = hp_max
 				break
 			
+			case "velocidade_de_movimento":
+				vel_up += 1
+				break
+			
 			case "atração_XP":
 				xp_area += 60
 				break
@@ -116,5 +121,5 @@ function gerar_upgrades()
         array_push(opcoes_mostradas, opcoes[indice]);
     }
 
-    //opcoes_mostradas[0] = "torreta"; //Trava algum upgrade a fim de testes
+    opcoes_mostradas[0] = "velocidade_de_movimento"; //Trava algum upgrade a fim de testes
 }
